@@ -1,0 +1,1 @@
+To enable email sending from your contact form, sign up at https://www.emailjs.com/ and get your USER_ID, SERVICE_ID, and TEMPLATE_ID. Replace the placeholders in contact.html JavaScript with your actual values. No backend required.
