@@ -109,7 +109,9 @@ p {
   font-family: var(--heading-font);
 }
 
-
+.main {
+  min-height: 1000px;
+}
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -723,53 +725,45 @@ a .text-decoration-underline :hover {
 }
 
 .about-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
-
+  background-image: url("../img/page-banners/AboutYGS-Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .contact-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
+  background-image: url("../img/page-banners/Contact-Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .gallery-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
+  background-image: url("../img/page-banners/Gallery-Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .publication-banner {
-  background-image: url("../img/page-banners/publication-banner.jpeg");
+  background-image: url("../img/page-banners/publication-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .research-banner {
   background-image: url("../img/page-banners/research-banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .teams-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
+  background-image: url("../img/page-banners/Team-Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .teaching-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
+  background-image: url("../img/page-banners/Teaching-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .page-title .heading {
@@ -780,6 +774,7 @@ a .text-decoration-underline :hover {
 .page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
+  color: var(--header-background-color);
 }
 
 .page-title nav {
@@ -1031,6 +1026,20 @@ section,
   margin-left: 10px;
 }
 
+.teaching ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teaching  ul li {
+  padding-bottom: 10px;
+}
+
+.teaching  ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
 
 
 /*--------------------------------------------------------------
@@ -1109,7 +1118,7 @@ section,
 
 .why-us .why-box .more-btn {
   display: inline-block;
-  background: var(--accent-color);
+  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
   padding: 8px 40px 10px 40px;
   color: var(--contrast-color);
   transition: all ease-in-out 0.4s;
@@ -1121,8 +1130,8 @@ section,
 }
 
 .why-us .why-box .more-btn:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--accent-color);
+  background: var(--surface-color);
 }
 
 .why-us .icon-box {
@@ -1197,9 +1206,6 @@ section,
 /*--------------------------------------------------------------
 # teams Section
 --------------------------------------------------------------*/
-.teams{
-  margin-bottom: 40px;
-}
 .teams .member {
   position: relative;
 }
@@ -1263,6 +1269,21 @@ section,
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 10px;
+}
+
+.teams .member .member-info  ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teams .member .member-info  ul li {
+  padding-bottom: 10px;
+}
+
+.teams .member .member-info  ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
 }
 
 .teams .member .member-info p {
