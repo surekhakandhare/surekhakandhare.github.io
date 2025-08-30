@@ -723,6 +723,12 @@ a .text-decoration-underline :hover {
   color: var(--default-color);
   position: relative;
 }
+.page-title-banner{
+  background-image: url("../img/page-banners/page-title-banner.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 .about-banner {
   background-image: url("../img/page-banners/AboutYGS-Banner.jpg");
@@ -749,7 +755,7 @@ a .text-decoration-underline :hover {
 }
 
 .research-banner {
-  background-image: url("../img/page-banners/research-banner.jpeg");
+  background-image: url("../img/page-banners/research-banner-resized.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1091,6 +1097,21 @@ section,
 .news .news-content .description {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.news .news-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news .news-content ul li {
+  padding-bottom: 10px;
+}
+
+.news .news-content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
 }
 
 
